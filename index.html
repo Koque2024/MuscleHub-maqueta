@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musclehub</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MuscleHub</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    
+  <header class="navbar">
+    <div class="logo">MUSCLEHUB</div>
+    <button class="mobile-toggle">&#9776;</button>
+    <nav class="nav-links">
+      <a href="#comprar">Comprar</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#envios">Envíos</a>
+      <a href="#contacto">Contáctanos</a>
+    </nav>
+    <div class="nav-actions">
+      <input class="search-bar" type="text" placeholder="Buscar..." />
+      <button class="icon-btn" id="cart-btn">🛒</button>
+      <button class="icon-btn" id="profile-btn">👤</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop>
+      <source src="video-gym.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay">
+      <h1>Rendimiento Real</h1>
+      <p>Suplementos de calidad profesional para atletas de verdad.</p>
+      <button class="btn">Ver Catálogo</button>
+    </div>
+  </section>
+
+  <main class="container">
+    <h2>Packs Destacados</h2>
+    <div class="grid" id="packs-section"></div>
+
+    <h2>Más Vendidos</h2>
+    <div class="grid" id="best-sellers"></div>
+
+    <h2>Parte del Catálogo</h2>
+    <div class="grid" id="catalog-preview"></div>
+  </main>
+
+  <div class="cert-row">
+    <div class="cert">ISO 9001</div>
+    <div class="cert">100% Auténtico</div>
+    <div class="cert">Aprobado por Deportistas</div>
+  </div>
+
+  <footer class="footer">
+    <div class="row">
+      <div>MUSCLEHUB © 2025</div>
+      <div class="row">
+        <a href="#comprar">Comprar</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#envios">Envíos</a>
+        <a href="#contacto">Contáctanos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
